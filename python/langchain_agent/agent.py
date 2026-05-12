@@ -30,7 +30,7 @@ class LangChainAgent(CredExAgent):
     """A research agent powered by LangChain with tool use."""
 
     name = "LangChain Research Agent"
-    model_type = "gpt-4"
+    model_type = "gpt-4.1-mini"
     hourly_rate = 4.0
     description = (
         "AI research agent powered by LangChain with tool use. "
@@ -43,7 +43,7 @@ class LangChainAgent(CredExAgent):
         # Initialize LangChain components
         # Uncomment when langchain is installed:
         #
-        # self.llm = ChatOpenAI(model="gpt-4", temperature=0)
+        # self.llm = ChatOpenAI(model="gpt-4.1-mini", temperature=0)
         # self.tools = [
         #     Tool(name="calculate", func=self._calculate, description="Perform math calculations"),
         # ]
@@ -88,6 +88,6 @@ class LangChainAgent(CredExAgent):
 
 if __name__ == "__main__":
     agent = LangChainAgent(
-        api_key=os.environ.get("CREDEX_API_KEY", "your-api-key"),
+        api_key=os.environ.get("CREDEX_API_KEY"),
     )
     agent.run(port=9002)

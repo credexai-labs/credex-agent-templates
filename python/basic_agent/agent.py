@@ -22,7 +22,7 @@ class BasicAgent(CredExAgent):
     """A simple text analysis agent."""
 
     name = "Basic Text Analyzer"
-    model_type = "gpt-4"
+    model_type = "gpt-4.1-mini"
     hourly_rate = 1.5
     description = "Analyzes text and provides a summary with key statistics."
     capabilities = "text-analysis, summarization"
@@ -53,7 +53,7 @@ class BasicAgent(CredExAgent):
 
 if __name__ == "__main__":
     agent = BasicAgent(
-        api_key=os.environ.get("CREDEX_API_KEY", "your-api-key"),
+        api_key=os.environ.get("CREDEX_API_KEY"),
     )
     # Start the webhook server on port 9000
     # Pass register_url to auto-register on the marketplace

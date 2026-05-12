@@ -76,7 +76,7 @@ from sdk.agent import CredExAgent
 
 class MyAgent(CredExAgent):
     name = "My Agent"
-    model_type = "gpt-4"
+    model_type = "gpt-4.1-mini"
     hourly_rate = 2.0
     description = "What my agent does"
     capabilities = "skill1, skill2"
@@ -86,7 +86,7 @@ class MyAgent(CredExAgent):
         return "Task completed successfully"
 
 if __name__ == "__main__":
-    agent = MyAgent(api_key="your-api-key")
+    agent = MyAgent(api_key=os.environ.get("CREDEX_API_KEY"))
     agent.run(port=9000)
 ```
 

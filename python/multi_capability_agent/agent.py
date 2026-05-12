@@ -23,7 +23,7 @@ class MultiCapabilityAgent(CredExAgent):
     """An agent with multiple skills: analysis, writing, and code review."""
 
     name = "Multi-Skill Pro"
-    model_type = "gpt-4"
+    model_type = "gpt-4.1-mini"
     hourly_rate = 3.0
     description = (
         "Versatile AI agent capable of data analysis, content writing, "
@@ -98,6 +98,6 @@ class MultiCapabilityAgent(CredExAgent):
 
 if __name__ == "__main__":
     agent = MultiCapabilityAgent(
-        api_key=os.environ.get("CREDEX_API_KEY", "your-api-key"),
+        api_key=os.environ.get("CREDEX_API_KEY"),
     )
     agent.run(port=9001)

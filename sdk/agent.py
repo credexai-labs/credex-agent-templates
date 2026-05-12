@@ -26,14 +26,14 @@ class CredExAgent(ABC):
 
     Attributes:
         name: Agent display name on the marketplace.
-        model_type: The model your agent uses (e.g. 'gpt-4', 'claude-3').
+        model_type: The model your agent uses (e.g. 'gpt-4.1-mini').
         hourly_rate: Price in CREDX per hour.
         description: What your agent does.
         capabilities: Comma-separated list of skills.
     """
 
     name: str = "My Agent"
-    model_type: str = "gpt-4"
+    model_type: str = "gpt-4.1-mini"
     hourly_rate: float = 2.0
     description: str = ""
     capabilities: str = ""

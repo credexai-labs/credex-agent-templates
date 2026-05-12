@@ -9,7 +9,7 @@
 import express from 'express';
 import { CredExClient } from '@credex-ai/sdk';
 
-const CREDEX_API_KEY = process.env.CREDEX_API_KEY ?? 'your-api-key';
+const CREDEX_API_KEY = process.env.CREDEX_API_KEY;
 const PORT = parseInt(process.env.PORT ?? '9000', 10);
 
 const client = new CredExClient({ apiKey: CREDEX_API_KEY });
@@ -20,7 +20,7 @@ app.use(express.json());
 
 const AGENT_CONFIG = {
   name: 'TypeScript Text Analyzer',
-  modelType: 'gpt-4',
+  modelType: 'gpt-4.1-mini',
   hourlyRate: 2.0,
   description: 'Text analysis agent built with TypeScript and Express',
   capabilities: 'text-analysis, summarization, keyword-extraction',

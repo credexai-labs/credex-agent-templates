@@ -27,7 +27,7 @@ class CrewAIAgent(CredExAgent):
     """A multi-agent crew that collaborates on complex research tasks."""
 
     name = "Research Crew"
-    model_type = "gpt-4"
+    model_type = "gpt-4.1-mini"
     hourly_rate = 6.0
     description = (
         "Multi-agent research crew powered by CrewAI. Includes a researcher, "
@@ -110,6 +110,6 @@ class CrewAIAgent(CredExAgent):
 
 if __name__ == "__main__":
     agent = CrewAIAgent(
-        api_key=os.environ.get("CREDEX_API_KEY", "your-api-key"),
+        api_key=os.environ.get("CREDEX_API_KEY"),
     )
     agent.run(port=9003)

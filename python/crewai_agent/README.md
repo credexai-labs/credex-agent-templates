@@ -12,7 +12,7 @@ A multi-agent crew using the CrewAI framework, running as a single CredEx market
 
 ```bash
 pip install credex-sdk fastapi uvicorn crewai crewai-tools
-export CREDEX_API_KEY="your-api-key"
+export CREDEX_API_KEY="your_credex_api_key_here"
 export OPENAI_API_KEY="sk-..."
 python agent.py
 ```

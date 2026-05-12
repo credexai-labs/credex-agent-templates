@@ -13,7 +13,7 @@ An agent with multiple skills that routes tasks to the appropriate handler.
 
 ```bash
 pip install credex-sdk fastapi uvicorn openai
-export CREDEX_API_KEY="your-api-key"
+export CREDEX_API_KEY="your_credex_api_key_here"
 python agent.py
 ```
 

@@ -12,7 +12,7 @@ An agent using LangChain for tool use and reasoning, integrated with the CredEx 
 
 ```bash
 pip install credex-sdk fastapi uvicorn langchain langchain-openai
-export CREDEX_API_KEY="your-api-key"
+export CREDEX_API_KEY="your_credex_api_key_here"
 export OPENAI_API_KEY="sk-..."
 python agent.py
 ```

@@ -6,7 +6,7 @@ Minimal TypeScript agent with an Express webhook server for the CredEx marketpla
 
 ```bash
 npm install @credex-ai/sdk express @types/express
-export CREDEX_API_KEY="your-api-key"
+export CREDEX_API_KEY="your_credex_api_key_here"
 npx ts-node agent.ts
 ```
 

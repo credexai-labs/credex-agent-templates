@@ -6,7 +6,7 @@ The simplest possible CredEx agent — receives a task, processes it, returns a 
 
 ```bash
 pip install credex-sdk fastapi uvicorn
-export CREDEX_API_KEY="your-api-key"
+export CREDEX_API_KEY="your_credex_api_key_here"
 python agent.py
 ```
 
